@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-
 <html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
         <title>Linktree jp</title>
     </head>
 
+
+
+
+    <!-------------------------------->
+    <!-- Contenu visible de la page -->
+    <!-------------------------------->
+
+
     <body>
-        
-
-        <!---- contenu de la page ---->
-
         <div class="bulle_secondaire">
             <header>
                 <section class="premier_bloc">
@@ -23,12 +26,48 @@
             </header>
 
             <main>
-                <section class="section_titre">
-                    <h2 class="titre">~ Réseaux sociaux ~</h2>
+                <div>
+                    <section class="section_titre">
+                        <h2 class="titre">~ Réseaux sociaux ~</h2>
+                    </section>
+                    <section class="section_titre">
+                        <p>Abonner total = <span>0</span></p>
+                    </section>
+                </div>
+
+
+
+                <!-- twitch -->
+                <section class="bulle_info ">
+                    <a target="_blank">
+                        <img class="logo" src="image/logo/twitch.png" alt="twitch">
+                    </a>
+
+                    <a target="_blank" href="https://www.twitch.tv/jp_kaikyo">
+                        <h3>twitch : stream</h3>
+                    </a>
+                    
+                    <p>Abonnés : <span id="twitch-count">Chargement...</span></p>
                 </section>
 
+
+                <!-- youtube VOD -->
                 <section class="bulle_info ">
-                    <a target="_blank" href="image/visualisation/compte_youtube.png">
+                    <a target="_blank">
+                        <img class="logo" src="image/logo/youtube.png" alt="youtube">
+                    </a>
+
+                    <a target="_blank" href="https://www.youtube.com/@Joao-Paulo-Pinto-Queiros">
+                        <h3>youtube : VOD </h3>
+                    </a>
+
+                    <p>Abonnés : <span id="youtube-count">Chargement...</span></p>
+                </section>
+
+
+                <!-- youtube rediff -->
+                <section class="bulle_info ">
+                    <a target="_blank">
                         <img class="logo" src="image/logo/youtube.png" alt="youtube">
                     </a>
 
@@ -39,45 +78,34 @@
                     <p>Abonnés : <span id="youtube-count">Chargement...</span></p>
                 </section>
 
+
+                <!-- tiktok -->
                 <section class="bulle_info ">
-                    <a target="_blank" href="image/visualisation/compte_twitch.png">
-                        <img class="logo" src="image/logo/twitch.png" alt="youtube">
+                    <a target="_blank">
+                        <img class="logo" src="image/logo/tiktok.png" alt="tiktok">
                     </a>
 
-                    <a target="_blank" href="https://www.twitch.tv/jp_kaikyo">
-                        <h3>twitch : stream</h3>
-                    </a>
-                    
-                    <p>Abonnés : <span id="twitch-count">Chargement...</span></p>
-                </section>
-
-                <section class="bulle_info ">
-                    <a target="_blank" href="image/visualisation/compte_tiktok.png">
-                        <img class="logo" src="image/logo/tiktok.png" alt="youtube">
-                    </a>
-
-                    <a target="_blank" href="https://www.tiktok.com/@jp_kaikyo">
+                    <a target="_blank">
                         <h3>tiktok : dev</h3>               
                     </a>
 
                     <p>Abonnés : <span id="tiktok-count">Chargement...</span></p>
                 </section>
 
+
+                <!-- insta -->
                 <section class="bulle_info ">
-                    <a target="_blank" href="image/visualisation/compte_insta_second.png">
-                        <img class="logo" src="image/logo/insta.png" alt="youtube">
+                    <a target="_blank">
+                        <img class="logo" src="image/logo/insta.png" alt="insta">
                     </a>
 
-                    <a target="_blank" href="https://www.instagram.com/jp_kaikyo_art/">
-                        <h3>instagram : art</h3>         
+                    <a target="_blank">
+                        <h3>instagram : dev</h3>         
                     </a>
 
                     <p>Abonnés : <span id="instagram-second-count">Chargement...</span></p>
                 </section>
             </main>
-
-            <footer>
-            </footer>
         </div>
     </body>
 </html>
