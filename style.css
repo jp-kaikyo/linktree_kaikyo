@@ -1,6 +1,6 @@
-/* ==== PALETTE DES COULEURS ==== */
-
-
+/*==============================*/
+/* ==== PALETTE -- COULEUR ==== */
+/*==============================*/
 
 
 :root {
@@ -24,44 +24,44 @@
 
 
 
-/* ==== PALETTE DES TEXTES ==== */
+/*==============================*/
+/* ==== PALETTE -- TEXTES ==== */
+/*=============================*/
 
 
-
-
+/*  Police d'écriture  */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 
 :root {
-    --police-titre: "DM Serif Text", serif;   /* pour les titres */
-    --police-texte: "Comic Neue", cursive;   /* pour les paragraphes */
+    --police-titre: "DM Serif Text", serif;
+    --police-texte: "Comic Neue", cursive;
 }
 
-/* Desktop */
+
+/*  taille écran  */
 @media(min-width:1000px){
     :root {
-    --taille-titre-principal: 2rem;      /* h1 */
-    --taille-sous-titre: 1.5rem;         /* h2 */
-    --taille-texte: 1rem;                /* p */
-    --taille-liens:1rem;                 /* a */
+    --taille-titre-principal: 2rem;
+    --taille-sous-titre: 1.5rem;
+    --taille-texte: 1rem;
+    --taille-liens:1rem;
     --gras-titre: 700;
     --gras-texte: 400;   
 }}
 
-/* Mobile */
 @media(max-width:999px){
     :root {
-    --taille-titre-principal: 1.25rem;      /* h1 */
-    --taille-sous-titre: 1rem;              /* h2 */
-    --taille-texte: 0.75rem;                /* p */
-    --taille-liens:0.75rem;                 /* a */
+    --taille-titre-principal: 1.25rem;
+    --taille-sous-titre: 1rem;  
+    --taille-texte: 0.75rem;      
+    --taille-liens:0.75rem;   
     --gras-titre: 700;
     --gras-texte: 400;   
 }}
 
 
-/* style titre */
-
+/*  style titre  */
 h1 {
     font-family: var(--police-titre);
     font-weight: var(--gras-titre);
@@ -81,8 +81,7 @@ h2 {
 }
 
 
-/* style texte */
-
+/*  style texte  */
 p, span {
     font-family: var(--police-texte);
     font-weight: var(--gras-texte);
@@ -92,8 +91,7 @@ p, span {
 }
 
 
-/* style lien */
-
+/*  style lien  */
 a {
     font-style: oblique;
     font-weight: 500;
@@ -102,25 +100,23 @@ a {
 }
 
 
-/* == hover == */
-
-
+/*  survol  */
 h1:hover {
     text-shadow: 2.5px 2.5px 5px var(--objet-clic);
     transition: 0.5s;
 }
+
 h2:hover {
     text-shadow: 2.5px 2.5px 5px var(--objet-survol);
     transition: 0.5s;
 }
+
 a:hover {
     color: var(--objet-survol);
 }
 
 
-/* == active == */
-
-
+/*  clic  */
 a:active {
     color: var(--objet-clic);
 }
@@ -128,19 +124,20 @@ a:active {
 
 
 
+/*=============================*/
+/* ==== PALETTE -- BULLE ==== */
+/*=============================*/
 
-/* ==== PALETTE DES BULLE ==== */
 
-
-
-
+/*  taille écran  */
+/*  bulle_secondaire  */
 @media(min-width:1000px){
    .bulle_secondaire {
         background-color: var(--font-contenu);
         color:var(--font-contours);
         border: solid var(--font-contours);
         padding: 4px;
-        margin: 2% 28% 4% 28%;
+        margin: 0.5% 25% 0.5% 25%;
         text-align: center;
         border-radius: 50px;
         box-shadow: 0px 0px 20px var(--ombre-moyenne);
@@ -152,7 +149,7 @@ a:active {
         color:var(--font-contours);
         border: solid var(--font-contours);
         padding: 2px;
-        margin: 1% 2% 2% 2%;
+        margin: 1.5% 3% 1.5% 3%;
         text-align: center;
         border-radius: 50px;
         box-shadow: 0px 0px 20px var(--ombre-moyenne);
@@ -160,6 +157,7 @@ a:active {
 }
 
 
+/*  bulle_info  */
 @media(min-width:1000px){
     .bulle_info {
         display: flex;
@@ -168,7 +166,7 @@ a:active {
         background-color: var(--font-contenu);
         border: solid var(--font-contours);
         padding: 4px;
-        margin: 4% 8% 4% 8%;
+        margin: 1% 8% 1% 8%;
         text-align: center;
         border-radius: 100px;
         box-shadow: 0px 0px 15px var(--ombre-douce);
@@ -192,9 +190,7 @@ a:active {
 }
 
 
-/* == hover == */
-
-
+/*  survol  */
 @media(min-width:1000px){
     .bulle_info:hover {
         border: solid var(--objet-survol);
@@ -205,9 +201,7 @@ a:active {
 }
 
 
-/* == active == */
-
-
+/* clic  */
 @media(min-width:1000px){
     .bulle_info:active {
         color: var(--objet-clic);
@@ -226,11 +220,12 @@ a:active {
 
 
 
-/* ==== PALETTE DES Logo ==== */
+/*===========================*/
+/* ==== PALETTE -- LOGO ==== */
+/*===========================*/
 
 
-
-
+/*  taille écran  */
 @media(min-width:1000px){
     .logo {
         width: 40px;
@@ -247,9 +242,7 @@ a:active {
 }
 
 
-/* == hover == */
-
-
+/*  Survol  */
 @media(min-width:1000px){
     .logo:hover {
         transform: scale(1.15);
@@ -261,22 +254,16 @@ a:active {
 
 
 
-/* ==== CSS body ==== */
+/*=============================*/
+/* ==== VISEULLE APLIQUER ==== */
+/*=============================*/
 
 
-
-
+/*  body  */
 body {
     background-color: var(--fond-principal);
     text-align: center;
 }
-
-
-
-
-/* ==== VISEULLE APLIQUER ==== */
-
-
 
 @media(min-width:1000px){
   .photo {
@@ -304,9 +291,7 @@ body {
 }
 
 
-/* == hover == */
-
-
+/*  survol  */
 @media(min-width:1000px){
     .photo:hover {
         opacity: 50%;
