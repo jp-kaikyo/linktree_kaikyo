@@ -42,22 +42,22 @@
 /*  taille écran  */
 @media(min-width:1000px){
     :root {
-    --taille-titre-principal: 1.7rem;
-    --taille-titre-second: 1.6rem;
-    --taille-texte: 1rem;
-    --taille-liens:1rem;
+    --taille-titre-principal: 1.8rem;
+    --taille-titre-second: 1.5rem;
+    --taille-texte: 1.2rem;
+    --taille-liens:1.2rem;
     --gras-titre: 700;
     --gras-texte: 400;   
 }}
 
 @media(max-width:999px){
     :root {
-    --taille-titre-principal: 0.7rem;
-    --taille-titre-second: 0.6rem;  
-    --taille-texte: 0.4rem;      
-    --taille-liens:0.4rem;   
+    --taille-titre-principal: 1.5rem;
+    --taille-titre-second: 1.2rem;  
+    --taille-texte: 0.9rem;
+    --taille-liens: 0.9rem;  
     --gras-titre: 700;
-    --gras-texte: 400;   
+    --gras-texte: 400;     
 }}
 
 
