@@ -5,16 +5,16 @@
 
 //  ajouter abonner  //
 let twitch = document.getElementById("twitch");
-let twitch_valeur = twitch.innerHTML = 41
+let twitch_valeur = twitch.innerHTML = 44
 
 let youtube_vod = document.getElementById("youtube_vod");
 let youtube_vod_valeur = youtube_vod.innerHTML = 3
 
 let youtube_rediff = document.getElementById("youtube_rediff");
-let youtube_rediff_valeur = youtube_rediff.innerHTML = 40
+let youtube_rediff_valeur = youtube_rediff.innerHTML = 45
 
 let tiktok = document.getElementById("tiktok");
-let tiktok_valeur = tiktok.innerHTML = 227
+let tiktok_valeur = tiktok.innerHTML = 228
 
 let insta = document.getElementById("insta");
 let insta_valeur = insta.innerHTML = 336
